@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * @param {number} x
+         * @return {number}
+         */
+        var reverse = function (x) {
+            let reversed = Math.abs(x).toString().split("").reverse().join("");
+            if (reversed > 2 ** 31) return 0;
+            return reversed * Math.sign(x);
+        };
+    </script>
+</body>
+
+</html>
